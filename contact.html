@@ -102,11 +102,12 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="contact__form2">
                                         <h3 class="emailh3">Get in touch</h3>
-                                        <form action="#">
-                                            <input type="text" id="EmailName" placeholder="Name">
-                                            <input type="text" id="EmailEmail" placeholder="Email">
-                                            <textarea id="MessageMessage" placeholder="Message" ></textarea>
-                                            <button type="submit" class="site-btn" onclick="Send()">Send Message</button>
+                                        <form action="https://api.web3forms.com/submit" method="POST">
+                                            <input type="hidden" name="access_key" value="c34a1322-2e6a-43f9-92df-e7a4e89c4338">
+                                            <input type="text" name="name"  placeholder="name" required>
+                                            <input type="email" name="email" placeholder="email" required>
+                                            <textarea name="message" required placeholder="email"></textarea>
+                                            <button type="submit">Submit Form</button>
                                         </form>
                                     </div>
                                 </div>
