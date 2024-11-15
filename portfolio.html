@@ -34,12 +34,6 @@
     
       gtag('config', 'G-ZRJVMC2796');
     </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            padge(1);
-        });
-    </script>
 </head>
 
 <body>
@@ -99,12 +93,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="portfolio__filter">
-                        <li class="active" data-filter="*" onclick="reset_to_1()">All</li>
-                        <li data-filter=".short" onclick="reset_to_1()">short content</li>
-                        <li data-filter=".ads" onclick="reset_to_1()">ads editing</li>
-                        <li data-filter=".youtube" onclick="reset_to_1()">youtube videos</li>
-                        <li data-filter=".motion" onclick="reset_to_1()">motion animation</li>
-                        <li data-filter=" .ecommerce" onclick="reset_to_1()">eCommerce creatives</li>
+                        <li class="active" data-filter="*" >All</li>
+                        <li data-filter=".short" >short content</li>
+                        <li data-filter=".ads" >ads editing</li>
+                        <li data-filter=".youtube" >youtube videos</li>
+                        <li data-filter=".motion" >motion animation</li>
+                        <li data-filter=" .ecommerce" >eCommerce creatives</li>
                     </ul>
                 </div>
             </div>
@@ -361,35 +355,7 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script>
-        let items = document.querySelectorAll(".portfolio__item")
 
-        let pages_inv = document.querySelectorAll('section.page_stuff');
-        pages_inv.forEach((page, index) => {
-            if (page.id !== "page1") {
-                page.style.display = 'none';
-            }
-        });
-        function padge(pageNumber) {
-            const itemsPerPage = 9; // Number of items per page
-            const startIndex = (pageNumber - 1) * itemsPerPage;
-            const endIndex = pageNumber * itemsPerPage;
-
-            items.forEach((video, index) => {
-                if (index >= startIndex && index < endIndex) {
-                    video.style.display = 'block'; // Show videos for the current page
-                } else {
-                    video.style.display = 'none'; // Hide other videos
-                }
-            });
-        }
-        
-        function reset_to_1(){
-            let one_button = document.getElementById("001");
-            one_button.click();
-
-        }
-    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
